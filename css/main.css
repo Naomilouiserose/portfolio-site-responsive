@@ -490,14 +490,14 @@ footer h3 {
 
   header .content-wrapper {
     min-height: 500px;
-    margin: 0 0 20px 0;
+    margin: 20px 0 20px 0;
   }
 
   header .title {
     display: flex;
     align-self: flex-start;
     text-align: left;
-    margin: 20px 0 200px 0;
+    margin: 40px 0 200px 0;
   }
 
   header nav {
@@ -518,6 +518,7 @@ footer h3 {
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-bottom: 40px;
     width: 100%;
   }
 
@@ -645,6 +646,11 @@ footer h3 {
     font-size: 1em;
   }
 
+  .sub-title2 {
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
   #work-link {
     margin-top: 40px;
   }
@@ -712,8 +718,8 @@ footer h3 {
   }
 
   header nav ul li  {
-    font-size: 1.2em;
-    padding-top: 10px;
+    font-size: 1.1em;
+    padding-top: 8px;
   }
 
   header .title {
@@ -722,11 +728,13 @@ footer h3 {
 
   header h1 {
     font-size: 3.5em;
+    margin-bottom: 75px;
 
   }
 
   .sub-title2 h2 {
     padding-bottom: 50px;
+    margin-right: 10px;
   }
 
   .box {
