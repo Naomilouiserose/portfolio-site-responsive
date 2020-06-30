@@ -154,7 +154,7 @@ a:hover {
 }
 
 img {
-  vertical-align: bottom;
+  vertical-align: top;
   width: 100%;
 }
 
@@ -259,11 +259,13 @@ hr {
 }
 
 .top figure {
+  display: flex;
+  justify-content: flex-start;
   margin: 20px 10px;
 }
 
 .top figure img {
-  border: 2px solid #b7b7b7;
+
 }
 
 .top .site-block-text {
@@ -285,6 +287,7 @@ hr {
 }
 
 .site-block-text h5 {
+  color: #550a46;
   margin: 8px 0;
 }
 
@@ -826,6 +829,14 @@ footer h3 {
       width: 100%;
     }
 
+    .top figure {
+
+    }
+
+    .top figure img {
+      vertical-align: top;
+    }
+
     .work-container {
       display: flex;
       flex-flow: row wrap;
@@ -835,7 +846,7 @@ footer h3 {
     .site-block {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       margin: 70px 0;
       width: 100%;
     }
@@ -847,7 +858,8 @@ footer h3 {
     .site-block .site-block-text {
       display: flex;
       align-self: flex-start;
-      margin: 0 0 0 20px;
+      padding-top: 20px;
+      margin: 0 0 0 40px;
       width: 35%;
     }
 
