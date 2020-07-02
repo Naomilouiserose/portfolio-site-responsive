@@ -103,7 +103,8 @@ html {
 body {
   color: #737373;
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
   text-align: center;
 }
 
@@ -111,7 +112,7 @@ h1 {
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 2.4em;
-  font-weight: bold;
+  font-weight: bolder;
   text-align: center;
   text-transform: uppercase;
   line-height: 1;
@@ -120,7 +121,7 @@ h1 {
 h2 {
   color: #0d0d0d;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-align: center;
   text-transform: uppercase;
 }
@@ -139,7 +140,7 @@ h5 {
 }
 
 p {
-  color: #8c8c8c;;
+  color: #8c8c8c;
   font-size: 0.8em;
   line-height: 1.5;
 }
@@ -209,6 +210,7 @@ header nav ul li {
   list-style-type: none;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
   font-size: 0.8em;
 }
 
@@ -243,6 +245,16 @@ header nav ul li {
   margin-top: 140px;
 }
 
+.top h2 {
+  margin-bottom: 0;
+}
+
+.backtotop {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
 hr {
   border-top: 1px dotted #e6e6e6;
   border-bottom: none;
@@ -262,10 +274,6 @@ hr {
   display: flex;
   justify-content: flex-start;
   margin: 20px 10px;
-}
-
-.top figure img {
-
 }
 
 .top .site-block-text {
@@ -296,11 +304,34 @@ hr {
   margin: 2px;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.button {
+  color: #550a46;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 20px 20px 0 20px;
+  text-decoration: underline;
+}
+
+.button:hover {
+  color:  #8c8c8c;
+}
+
 .middle {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 40px 0 40px 0;
+  margin: 65px 0 120px 0;
+}
+
+.middle h2 {
+  margin: 15px 0 0 0;
 }
 
 .about-me {
@@ -309,6 +340,7 @@ hr {
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 30px;
 }
 
 .about-me figure {
@@ -322,7 +354,8 @@ hr {
 
 .about-me p {
   margin: 0;
-  text-align: center;
+  text-align: left;
+  margin: 10px 0;
   width: 90%;
 }
 
@@ -331,17 +364,22 @@ hr {
   display: flex;
   flex-direction: row wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 85px;
 }
 
 .bottom h2 {
-  margin-top: 20px;
+  margin: 20px 0 0 0;
+}
+
+.bottom h4 {
+  font-family: 'Raleway', sans-serif;
 }
 
 .contact-blocks {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  margin-top: 30px;
 }
 
 .block-one,
@@ -489,6 +527,11 @@ footer h3 {
     line-height: 1.6;
   }
 
+  .button {
+    font-size: 1em;
+    padding: 20px 20px 0 20px;
+  }
+
   hr {
     margin-left: 46%;
   }
@@ -517,6 +560,10 @@ footer h3 {
 
   header nav ul li {
     font-size: 1em;
+  }
+
+  .backtotop {
+    font-size: 0.8em;
   }
 
   .sub-title1 {
@@ -559,7 +606,7 @@ footer h3 {
   }
 
   .top h2 {
-    margin: 20px 0;
+    margin: 20px 0 0 0;
   }
 
   .work-container {
@@ -618,12 +665,12 @@ footer h3 {
   .about-me p {
     margin: 20px 0 0 40px;
     text-align: left;
-    width: 40%;
+    width: 45%;
   }
 
   .about-me figure {
-    margin: 20px 40px 0 0;
-    width: 40%;
+    margin: 15px 40px 0 0;
+    width: 35%;
   }
 
   .bottom h2 {
@@ -665,7 +712,7 @@ footer h3 {
   }
 
   h2 {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 
   h3 {
@@ -673,7 +720,7 @@ footer h3 {
   }
 
   h4 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   h5 {
@@ -681,16 +728,25 @@ footer h3 {
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1em;
+  }
+
+  .button {
+    font-size: 1.3em;
+    padding: 20px 20px 0 20px;
   }
 
   .sub-title2 {
-    margin-left: 20px;
+    margin-left: 70px;
     margin-bottom: 40px;
   }
 
   .sub-title2 h2 {
     margin-right: 110px;
+  }
+
+  .sub-title2 .box {
+    margin-right: 250px;
   }
 
   #work-link {
@@ -711,13 +767,13 @@ footer h3 {
   }
 
   .about-me p {
-    margin: 0 0 0 50px;
+    margin: 0 0 80px 50px;
     text-align: left;
-    width: 50%;
+    width: 40%;
   }
 
   .about-me figure {
-    margin: 0 60px 0 10px;
+    margin: 50px 60px 0 10px;
     width: 35%;
   }
 
@@ -739,7 +795,7 @@ footer h3 {
   }
 
   h2 {
-    font-size: 1.8em;
+    font-size: 1.9em;
   }
 
   h4 {
@@ -755,6 +811,18 @@ footer h3 {
     line-height: 1.5;
   }
 
+  .buttons {
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    align-self: flex-start;
+  }
+
+  .button {
+    font-size: 1em;
+    padding: 30px 30px 0 0;
+  }
+
   hr {
     margin-left: 46%;
   }
@@ -767,10 +835,6 @@ footer h3 {
   header .content-wrapper {
     min-height: 500px;
     margin: 30px 0 20px 0;
-  }
-
-  .top {
-    margin-top: 30px;
   }
 
   header {
@@ -790,11 +854,13 @@ footer h3 {
      justify-content: flex-end;
      align-items: flex-end;
      align-content: flex-end;
+
   }
 
   header nav ul li  {
     font-size: 1.1em;
     padding-top: 8px;
+     margin-right: 50px;
   }
 
   header .title {
@@ -812,25 +878,26 @@ footer h3 {
     margin-right: 30px;
   }
 
-  .box {
+  .sub-title2 .box {
       font-size: 1.3em;
       font-weight: bold;
       font-style: italic;
-      margin-right: 300px;
+      margin-right: 350px;
     }
 
     .top {
       display: flex;
       flex-flow: row wrap;
+      margin-top: 30px;
       width: 100%;
+    }
+
+    .backtotop {
+      font-size: 1em;
     }
 
     .top .content-wrapper {
       width: 100%;
-    }
-
-    .top figure {
-
     }
 
     .top figure img {
@@ -881,13 +948,13 @@ footer h3 {
     }
 
     .about-me p {
-      margin: 0 20px 150px 70px;
+      margin: 0 0 160px 90px;
       text-align: left;
       width: 45%;
     }
 
     .about-me figure {
-      margin: 50px 30px 0 10px;
+      margin: 35px 0 0 80px;
       width: 30%;
     }
 
@@ -896,13 +963,18 @@ footer h3 {
     }
 
     .bottom h2 {
-      margin: 50px 0;
+      margin: 50px 0 0 0;
+    }
+
+    .bottom .backtotop {
+      margin-bottom: 60px;
     }
 
     .contact-blocks {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-top: 50px;
 
     }
 
